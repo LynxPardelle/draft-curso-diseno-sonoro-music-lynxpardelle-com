@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "domain": "curso-diseno-sonoro.music.lynxpardelle.com",
+  "pageId": "default",
+  "rootIds": [
+    "site-shell"
+  ],
+  "modalRootIds": [],
+  "seo": {
+    "title": "Diseño sonoro digital | Lynx Pardelle",
+    "description": "Crea sonidos para tus producciones a partir de sintetizadores y grabaciones. Explora cómo cambian el timbre y la textura al modificar una fuente sonora.",
+    "canonical": "https://curso-diseno-sonoro.music.lynxpardelle.com/",
+    "robots": "index,follow",
+    "openGraph": {
+      "image": "https://assets.zoolandingpage.com.mx/music.lynxpardelle.com/shared/images/lynx-offer-v1-curso-diseno-sonoro.webp"
+    }
+  }
+}
