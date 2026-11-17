@@ -581,7 +581,7 @@
           "topic-detail-0"
         ],
         "styles": {
-          "paddingBlock": "15px",
+          "paddingBlock": "clamp(9px, 2.1vw, 15px)",
           "borderTop": "1px solid #4933aa"
         }
       }
@@ -625,7 +625,7 @@
           "topic-detail-1"
         ],
         "styles": {
-          "paddingBlock": "15px",
+          "paddingBlock": "clamp(9px, 2.1vw, 15px)",
           "borderTop": "1px solid #4933aa"
         }
       }
@@ -669,7 +669,7 @@
           "topic-detail-2"
         ],
         "styles": {
-          "paddingBlock": "15px",
+          "paddingBlock": "clamp(9px, 2.1vw, 15px)",
           "borderTop": "1px solid #4933aa"
         }
       }
@@ -713,7 +713,7 @@
           "topic-detail-3"
         ],
         "styles": {
-          "paddingBlock": "15px",
+          "paddingBlock": "clamp(9px, 2.1vw, 15px)",
           "borderTop": "1px solid #4933aa"
         }
       }
@@ -723,7 +723,7 @@
       "type": "text",
       "config": {
         "id": "outcome-title",
-        "text": "Qué vas a trabajar",
+        "text": "¿Qué técnicas de síntesis aprenderás para diseñar sonidos?",
         "tag": "h2",
         "styles": {
           "margin": "0",
@@ -741,7 +741,7 @@
       "type": "text",
       "config": {
         "id": "outcome-copy",
-        "text": "Podrás elegir una técnica de síntesis o muestreo según el sonido que buscas y construir tus propias percusiones, bajos y ambientes.",
+        "text": "Comparas síntesis aditiva, sustractiva, FM, tablas de ondas y modelado físico. También transformas muestras con un sampler y con síntesis orgánica y granular.",
         "tag": "p",
         "styles": {
           "margin": "0",
@@ -792,13 +792,11 @@
         "tag": "div",
         "components": [
           "topic-title",
-          "topic-0",
-          "topic-1",
-          "topic-2",
-          "topic-3"
+          "topic-grid"
         ],
         "styles": {
-          "minWidth": "0"
+          "minWidth": "0",
+          "marginBlockEnd": "clamp(18px, 3vw, 32px)"
         }
       }
     },
@@ -1013,7 +1011,6 @@
       "config": {
         "tag": "div",
         "components": [
-          "topic-list",
           "activity"
         ],
         "styles": {
@@ -1030,6 +1027,7 @@
         "tag": "div",
         "components": [
           "outcome",
+          "topic-list",
           "course-detail",
           "topic-information"
         ],
@@ -1038,7 +1036,8 @@
           "width": "min(100%, 1200px)",
           "marginInline": "auto",
           "paddingInline": "clamp(18px, 5vw, 66px)",
-          "paddingBlock": "clamp(40px, 7vw, 86px)"
+          "paddingBlock": "clamp(40px, 7vw, 86px)",
+          "display": "block"
         }
       }
     },
@@ -1365,7 +1364,8 @@
         "tag": "section",
         "components": [
           "offer-contact",
-          "return-link"
+          "return-link",
+          "portfolio-reference"
         ],
         "styles": {
           "boxSizing": "border-box",
@@ -1621,6 +1621,42 @@
           "fontFamily": "\"Instrument Sans\", system-ui, sans-serif",
           "lineHeight": "1.6",
           "minHeight": "100vh"
+        }
+      }
+    },
+    {
+      "id": "portfolio-reference",
+      "type": "link",
+      "config": {
+        "text": "Ver el trabajo musical de Lynx Pardelle",
+        "href": "https://lynxpardelle.com/music",
+        "styles": {
+          "color": "#f6c17d",
+          "textUnderlineOffset": "4px",
+          "minHeight": "44px",
+          "display": "inline-flex",
+          "alignItems": "center",
+          "fontWeight": "640"
+        }
+      }
+    },
+    {
+      "id": "topic-grid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "topic-0",
+          "topic-1",
+          "topic-2",
+          "topic-3"
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, max(240px, 30%)), 1fr))",
+          "columnGap": "clamp(12px, 2.5vw, 28px)",
+          "rowGap": "0",
+          "alignItems": "start"
         }
       }
     }
