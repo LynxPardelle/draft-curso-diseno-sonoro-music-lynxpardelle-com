@@ -140,201 +140,406 @@
       }
     },
     {
-      "id": "page-heading",
+      "id": "promo-contado-label",
       "type": "text",
       "config": {
-        "id": "page-heading",
-        "text": "Diseño sonoro digital",
-        "tag": "h1",
+        "id": "promo-contado-label",
+        "text": "Pago único",
+        "tag": "h3",
         "styles": {
           "margin": "0",
-          "fontFamily": "\"Instrument Serif\", Georgia, serif",
-          "fontWeight": "400",
-          "lineHeight": "1",
-          "letterSpacing": "-.04em",
-          "textWrap": "balance",
-          "fontSize": "clamp(38px, 6vw, 82px)",
-          "color": "#f7f3ea",
-          "marginBlock": "9px 16px",
-          "maxWidth": "17ch"
+          "fontSize": "clamp(17px, 2.3vw, 23px)",
+          "fontWeight": "720"
         }
       }
     },
     {
-      "id": "offer-duration",
+      "id": "promo-contado-amount",
       "type": "text",
       "config": {
-        "id": "offer-duration",
-        "text": "Duración · 4 meses",
+        "id": "promo-contado-amount",
+        "text": "$14,000 MXN",
         "tag": "p",
         "styles": {
           "margin": "0",
-          "fontWeight": "720",
-          "marginTop": "14px"
+          "fontSize": "clamp(30px, 5.4vw, 60px)",
+          "lineHeight": "1.05",
+          "fontWeight": "800",
+          "marginBlock": "8px 12px"
         }
       }
     },
     {
-      "id": "hero-action",
-      "type": "link",
-      "config": {
-        "text": "Consultar por WhatsApp",
-        "href": "https://wa.me/525522699563?text=Hola%2C%20Lynx.%20Quisiera%20informaci%C3%B3n%20sobre%20el%20curso%20Dise%C3%B1o%20sonoro%20digital.",
-        "styles": {
-          "color": "#141217",
-          "textUnderlineOffset": "4px",
-          "minHeight": "44px",
-          "display": "inline-flex",
-          "alignItems": "center",
-          "fontWeight": "750",
-          "padding": "8px 18px",
-          "background": "#f6c17d",
-          "textDecoration": "none",
-          "boxSizing": "border-box",
-          "borderRadius": "3px"
-        }
-      }
-    },
-    {
-      "id": "hero-details",
-      "type": "link",
-      "config": {
-        "text": "Ver el temario",
-        "href": "#contenido-de-la-oferta",
-        "styles": {
-          "color": "inherit",
-          "textUnderlineOffset": "4px",
-          "minHeight": "44px",
-          "display": "inline-flex",
-          "alignItems": "center",
-          "fontWeight": "640"
-        }
-      }
-    },
-    {
-      "id": "hero-label",
+      "id": "promo-contado-detail",
       "type": "text",
       "config": {
-        "id": "hero-label",
-        "text": "Curso",
+        "id": "promo-contado-detail",
+        "text": "Un pago por el curso completo. Ahorras $14,000 MXN frente al precio regular.",
         "tag": "p",
         "styles": {
           "margin": "0",
-          "fontWeight": "760",
-          "textTransform": "uppercase",
-          "letterSpacing": ".13em",
-          "fontSize": "12px",
-          "color": "#f6c17d"
+          "maxWidth": "42ch"
         }
       }
     },
     {
-      "id": "hero-description",
+      "id": "promo-contado",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "promo-contado-label",
+          "promo-contado-amount",
+          "promo-contado-detail"
+        ],
+        "styles": {
+          "background": "#d3c6ff",
+          "color": "#201a49",
+          "minWidth": "0",
+          "border": "1px solid #4933aa",
+          "padding": "clamp(18px, 3.1vw, 33px)"
+        }
+      }
+    },
+    {
+      "id": "promo-mensual-label",
       "type": "text",
       "config": {
-        "id": "hero-description",
-        "text": "Crea sonidos para tus producciones a partir de sintetizadores y grabaciones. Explora cómo cambian el timbre y la textura al modificar una fuente sonora.",
+        "id": "promo-mensual-label",
+        "text": "Mensualidad",
+        "tag": "h3",
+        "styles": {
+          "margin": "0",
+          "fontSize": "clamp(17px, 2.3vw, 23px)",
+          "fontWeight": "720"
+        }
+      }
+    },
+    {
+      "id": "promo-mensual-amount",
+      "type": "text",
+      "config": {
+        "id": "promo-mensual-amount",
+        "text": "$3,500 MXN",
         "tag": "p",
         "styles": {
           "margin": "0",
-          "maxWidth": "61ch",
-          "fontSize": "clamp(16px, 2vw, 21px)",
-          "lineHeight": "1.58"
+          "fontSize": "clamp(30px, 5.4vw, 60px)",
+          "lineHeight": "1.05",
+          "fontWeight": "800",
+          "marginBlock": "8px 12px"
         }
       }
     },
     {
-      "id": "hero-actions",
+      "id": "promo-mensual-detail",
+      "type": "text",
+      "config": {
+        "id": "promo-mensual-detail",
+        "text": "4 pagos mensuales. Total del curso $14,000 MXN.",
+        "tag": "p",
+        "styles": {
+          "margin": "0",
+          "maxWidth": "42ch"
+        }
+      }
+    },
+    {
+      "id": "promo-mensual",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "promo-mensual-label",
+          "promo-mensual-amount",
+          "promo-mensual-detail"
+        ],
+        "styles": {
+          "background": "transparent",
+          "color": "#201a49",
+          "minWidth": "0",
+          "border": "1px solid #4933aa",
+          "padding": "clamp(18px, 3.1vw, 33px)"
+        }
+      }
+    },
+    {
+      "id": "price-heading",
+      "type": "text",
+      "config": {
+        "id": "price-heading",
+        "text": "Promoción de inscripción",
+        "tag": "h2",
+        "styles": {
+          "margin": "0",
+          "fontSize": "clamp(29px, 4.2vw, 53px)",
+          "lineHeight": "1.1",
+          "fontWeight": "730"
+        }
+      }
+    },
+    {
+      "id": "price-intro",
+      "type": "text",
+      "config": {
+        "id": "price-intro",
+        "text": "Elige cómo cubrir el curso completo. Los importes están en pesos mexicanos.",
+        "tag": "p",
+        "styles": {
+          "margin": "0",
+          "marginBlock": "10px 21px",
+          "maxWidth": "61ch"
+        }
+      }
+    },
+    {
+      "id": "price-reference-label",
+      "type": "text",
+      "config": {
+        "id": "price-reference-label",
+        "text": "Precio regular del curso",
+        "tag": "span",
+        "styles": {
+          "margin": "0"
+        }
+      }
+    },
+    {
+      "id": "price-reference-amount",
+      "type": "text",
+      "config": {
+        "id": "price-reference-amount",
+        "text": "$28,000 MXN",
+        "tag": "span",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "textDecoration": "line-through"
+        }
+      }
+    },
+    {
+      "id": "price-reference",
       "type": "container",
       "config": {
         "tag": "div",
         "components": [
-          "hero-action",
-          "hero-details"
+          "price-reference-label",
+          "price-reference-amount"
         ],
         "styles": {
           "display": "flex",
-          "alignItems": "center",
           "flexWrap": "wrap",
-          "gap": "7px 18px",
-          "marginTop": "23px"
+          "gap": "4px 9px",
+          "marginBlockEnd": "14px"
         }
       }
     },
     {
-      "id": "hero-copy",
+      "id": "price-list",
       "type": "container",
       "config": {
         "tag": "div",
         "components": [
-          "hero-label",
-          "page-heading",
-          "hero-description",
-          "offer-duration",
-          "hero-actions"
+          "promo-contado",
+          "promo-mensual"
         ],
         "styles": {
-          "minWidth": "0",
-          "position": "relative",
-          "zIndex": "1"
+          "display": "grid",
+          "gap": "12px",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 240px), 1fr))"
         }
       }
     },
     {
-      "id": "hero-art",
-      "type": "media",
+      "id": "price-benefit-label-0",
+      "type": "text",
       "config": {
-        "tag": "image",
-        "src": "https://assets.zoolandingpage.com.mx/music.lynxpardelle.com/shared/images/lynx-offer-v1-curso-diseno-sonoro.webp",
-        "alt": "Cables y controles conectados en un sintetizador modular.",
-        "loading": "eager",
-        "fetchPriority": "high",
-        "decoding": "async",
+        "id": "price-benefit-label-0",
+        "text": "Inscripción con un amigo",
+        "tag": "h3",
         "styles": {
-          "display": "block",
-          "width": "100%",
-          "aspectRatio": "6 / 5",
-          "objectFit": "cover",
-          "border": "1px solid #6b5546",
+          "margin": "0",
+          "fontSize": "1.08rem",
+          "fontWeight": "760"
+        }
+      }
+    },
+    {
+      "id": "price-benefit-detail-0",
+      "type": "text",
+      "config": {
+        "id": "price-benefit-detail-0",
+        "text": "Si se inscriben juntos, el total por persona es $14,000 MXN aunque elijan mensualidades. Consulta el calendario para ese plan.",
+        "tag": "p",
+        "styles": {
+          "margin": "0",
+          "marginBlockStart": "5px",
+          "maxWidth": "55ch"
+        }
+      }
+    },
+    {
+      "id": "price-benefit-0",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "price-benefit-label-0",
+          "price-benefit-detail-0"
+        ],
+        "styles": {
+          "paddingBlock": "12px",
+          "borderBlockEnd": "1px solid #4933aa"
+        }
+      }
+    },
+    {
+      "id": "price-benefit-label-1",
+      "type": "text",
+      "config": {
+        "id": "price-benefit-label-1",
+        "text": "Descuento en masterclasses durante el curso",
+        "tag": "h3",
+        "styles": {
+          "margin": "0",
+          "fontSize": "1.08rem",
+          "fontWeight": "760"
+        }
+      }
+    },
+    {
+      "id": "price-benefit-detail-1",
+      "type": "text",
+      "config": {
+        "id": "price-benefit-detail-1",
+        "text": "Obtén el 25 % de descuento. Si pagas el curso de contado, el descuento es del 50 %.",
+        "tag": "p",
+        "styles": {
+          "margin": "0",
+          "marginBlockStart": "5px",
+          "maxWidth": "55ch"
+        }
+      }
+    },
+    {
+      "id": "price-benefit-1",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "price-benefit-label-1",
+          "price-benefit-detail-1"
+        ],
+        "styles": {
+          "paddingBlock": "12px",
+          "borderBlockEnd": "1px solid #4933aa"
+        }
+      }
+    },
+    {
+      "id": "price-benefits",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "price-benefit-0",
+          "price-benefit-1"
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 250px), 1fr))",
+          "gap": "0 20px",
+          "marginBlockStart": "9px"
+        }
+      }
+    },
+    {
+      "id": "price-contact",
+      "type": "link",
+      "config": {
+        "text": "Consultar inscripción",
+        "href": "https://wa.me/525522699563?text=Hola%2C%20Lynx.%20Quisiera%20informaci%C3%B3n%20sobre%20el%20curso%20Dise%C3%B1o%20sonoro%20digital.",
+        "styles": {
+          "color": "#201a49",
+          "textUnderlineOffset": "4px",
+          "minHeight": "44px",
+          "display": "inline-flex",
+          "alignItems": "center",
+          "background": "#d3c6ff",
+          "padding": "9px 17px",
+          "fontWeight": "760",
+          "textDecoration": "none",
           "boxSizing": "border-box"
         }
       }
     },
     {
-      "id": "hero-frame",
+      "id": "price-next-detail",
+      "type": "text",
+      "config": {
+        "id": "price-next-detail",
+        "text": "Pregunta por la próxima fecha de inicio.",
+        "tag": "p",
+        "styles": {
+          "margin": "0"
+        }
+      }
+    },
+    {
+      "id": "price-next",
       "type": "container",
       "config": {
         "tag": "div",
         "components": [
-          "hero-copy",
-          "hero-art"
+          "price-contact",
+          "price-next-detail"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "9px 16px",
+          "marginBlockStart": "19px"
+        }
+      }
+    },
+    {
+      "id": "pricing-frame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "price-heading",
+          "price-intro",
+          "price-reference",
+          "price-list",
+          "price-benefits",
+          "price-next"
         ],
         "styles": {
           "boxSizing": "border-box",
           "width": "min(100%, 1200px)",
           "marginInline": "auto",
           "paddingInline": "clamp(18px, 5vw, 66px)",
-          "paddingBlock": "clamp(40px, 7vw, 86px)",
-          "display": "grid",
-          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 325px), 1fr))",
-          "gap": "clamp(17px, 4.5vw, 58px)",
-          "alignItems": "center",
-          "minHeight": "min(620px, 70svh)"
+          "paddingBlock": "clamp(40px, 7vw, 86px)"
         }
       }
     },
     {
-      "id": "hero",
+      "id": "pricing",
       "type": "container",
       "config": {
         "tag": "section",
         "components": [
-          "hero-frame"
+          "pricing-frame"
         ],
         "styles": {
-          "background": "#272027",
-          "color": "#f7f3ea"
-        }
+          "background": "#f1efff",
+          "color": "#201a49",
+          "borderBlockStart": "1px solid #4933aa"
+        },
+        "id": "precios"
       }
     },
     {
@@ -342,7 +547,7 @@
       "type": "text",
       "config": {
         "id": "topic-heading-0",
-        "text": "Escucha y composición sonora",
+        "text": "Sonido, escucha y composición",
         "tag": "h3",
         "styles": {
           "margin": "0",
@@ -357,7 +562,7 @@
       "type": "text",
       "config": {
         "id": "topic-detail-0",
-        "text": "Identifica diferencias de timbre, ataque y duración. Conoce las partes del sintetizador y cómo afectan lo que escuchas.",
+        "text": "Distingue timbre, ataque y duración al comparar fuentes. Trabaja la composición sonora y reconoce las partes del sintetizador al explorar cómo se construye un timbre.",
         "tag": "p",
         "styles": {
           "margin": "0",
@@ -377,7 +582,7 @@
         ],
         "styles": {
           "paddingBlock": "15px",
-          "borderTop": "1px solid #d7cec3"
+          "borderTop": "1px solid #4933aa"
         }
       }
     },
@@ -386,7 +591,7 @@
       "type": "text",
       "config": {
         "id": "topic-heading-1",
-        "text": "Métodos de síntesis digital",
+        "text": "Técnicas y plugins de síntesis",
         "tag": "h3",
         "styles": {
           "margin": "0",
@@ -401,7 +606,7 @@
       "type": "text",
       "config": {
         "id": "topic-detail-1",
-        "text": "Compara síntesis aditiva, sustractiva, FM, tablas de ondas y modelado físico al construir distintos timbres.",
+        "text": "Prueba síntesis aditiva, sustractiva y FM. Compara el recorrido por tablas de ondas y el modelado físico con ejemplos de sintetizadores digitales.",
         "tag": "p",
         "styles": {
           "margin": "0",
@@ -421,7 +626,7 @@
         ],
         "styles": {
           "paddingBlock": "15px",
-          "borderTop": "1px solid #d7cec3"
+          "borderTop": "1px solid #4933aa"
         }
       }
     },
@@ -445,7 +650,7 @@
       "type": "text",
       "config": {
         "id": "topic-detail-2",
-        "text": "Recorta y modifica muestras con un sampler. Usa técnicas orgánicas y granulares para convertir una grabación en texturas nuevas.",
+        "text": "Retoque de muestras en un sampler, síntesis orgánica y granular, y procesos encadenados para cambiar el carácter de una fuente.",
         "tag": "p",
         "styles": {
           "margin": "0",
@@ -465,7 +670,7 @@
         ],
         "styles": {
           "paddingBlock": "15px",
-          "borderTop": "1px solid #d7cec3"
+          "borderTop": "1px solid #4933aa"
         }
       }
     },
@@ -474,7 +679,7 @@
       "type": "text",
       "config": {
         "id": "topic-heading-3",
-        "text": "Diseño de sonidos para producción",
+        "text": "Sonidos destinados a una producción",
         "tag": "h3",
         "styles": {
           "margin": "0",
@@ -489,7 +694,7 @@
       "type": "text",
       "config": {
         "id": "topic-detail-3",
-        "text": "Construye percusiones, bajos, sonidos solistas y capas ambientales según el papel que tendrán en tu sesión.",
+        "text": "Construye percusiones, bajos, leads y capas ambientales tomando en cuenta el papel de cada sonido dentro del arreglo.",
         "tag": "p",
         "styles": {
           "margin": "0",
@@ -509,7 +714,7 @@
         ],
         "styles": {
           "paddingBlock": "15px",
-          "borderTop": "1px solid #d7cec3"
+          "borderTop": "1px solid #4933aa"
         }
       }
     },
@@ -641,9 +846,164 @@
           "activity-copy"
         ],
         "styles": {
-          "background": "#ece2d1",
+          "background": "#d3c6ff",
+          "color": "#201a49",
           "padding": "clamp(19px, 3vw, 32px)",
           "alignSelf": "start"
+        }
+      }
+    },
+    {
+      "id": "format-heading",
+      "type": "text",
+      "config": {
+        "id": "format-heading",
+        "text": "Formato",
+        "tag": "h3",
+        "styles": {
+          "margin": "0",
+          "fontSize": "clamp(17px, 2.1vw, 23px)",
+          "lineHeight": "1.25",
+          "fontWeight": "670"
+        }
+      }
+    },
+    {
+      "id": "format-detail-0",
+      "type": "text",
+      "config": {
+        "id": "format-detail-0",
+        "text": "Percusiones",
+        "tag": "span",
+        "styles": {
+          "margin": "0"
+        }
+      }
+    },
+    {
+      "id": "format-item-0",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "components": [
+          "format-detail-0"
+        ],
+        "styles": {}
+      }
+    },
+    {
+      "id": "format-detail-1",
+      "type": "text",
+      "config": {
+        "id": "format-detail-1",
+        "text": "Bajos",
+        "tag": "span",
+        "styles": {
+          "margin": "0"
+        }
+      }
+    },
+    {
+      "id": "format-item-1",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "components": [
+          "format-detail-1"
+        ],
+        "styles": {}
+      }
+    },
+    {
+      "id": "format-detail-2",
+      "type": "text",
+      "config": {
+        "id": "format-detail-2",
+        "text": "Leads",
+        "tag": "span",
+        "styles": {
+          "margin": "0"
+        }
+      }
+    },
+    {
+      "id": "format-item-2",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "components": [
+          "format-detail-2"
+        ],
+        "styles": {}
+      }
+    },
+    {
+      "id": "format-detail-3",
+      "type": "text",
+      "config": {
+        "id": "format-detail-3",
+        "text": "Texturas ambientales",
+        "tag": "span",
+        "styles": {
+          "margin": "0"
+        }
+      }
+    },
+    {
+      "id": "format-item-3",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "components": [
+          "format-detail-3"
+        ],
+        "styles": {}
+      }
+    },
+    {
+      "id": "format-list",
+      "type": "container",
+      "config": {
+        "tag": "ul",
+        "components": [
+          "format-item-0",
+          "format-item-1",
+          "format-item-2",
+          "format-item-3"
+        ],
+        "styles": {
+          "paddingInlineStart": "19px",
+          "marginBlock": "10px 0"
+        }
+      }
+    },
+    {
+      "id": "offer-format-details",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "format-heading",
+          "format-list"
+        ],
+        "styles": {
+          "minWidth": "0"
+        }
+      }
+    },
+    {
+      "id": "topic-information",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "offer-format-details"
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 325px), 1fr))",
+          "gap": "clamp(17px, 4.5vw, 58px)",
+          "marginBlockStart": "25px"
         }
       }
     },
@@ -670,7 +1030,8 @@
         "tag": "div",
         "components": [
           "outcome",
-          "course-detail"
+          "course-detail",
+          "topic-information"
         ],
         "styles": {
           "boxSizing": "border-box",
@@ -690,249 +1051,274 @@
           "topic-frame"
         ],
         "styles": {
-          "color": "#141217",
-          "background": "#f7f3ea"
+          "color": "#201a49",
+          "background": "#f1efff"
         },
         "id": "contenido-de-la-oferta",
         "tabindex": -1
       }
     },
     {
-      "id": "price-label-0",
-      "type": "text",
+      "id": "context-art",
+      "type": "media",
       "config": {
-        "id": "price-label-0",
-        "text": "Pago de contado",
-        "tag": "p",
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/music.lynxpardelle.com/shared/images/lynx-offer-v1-curso-diseno-sonoro.webp",
+        "alt": "Cables y controles conectados en un sintetizador modular.",
+        "loading": "lazy",
+        "decoding": "async",
         "styles": {
-          "margin": "0",
-          "fontWeight": "700"
+          "display": "block",
+          "width": "100%",
+          "aspectRatio": "16 / 9",
+          "objectFit": "cover",
+          "maxHeight": "480px"
         }
       }
     },
     {
-      "id": "price-value-0",
-      "type": "text",
-      "config": {
-        "id": "price-value-0",
-        "text": "$14,000 MXN",
-        "tag": "p",
-        "styles": {
-          "margin": "0",
-          "fontSize": "clamp(19px, 3vw, 30px)",
-          "fontWeight": "760"
-        }
-      }
-    },
-    {
-      "id": "price-0",
+      "id": "offer-context",
       "type": "container",
       "config": {
         "tag": "div",
         "components": [
-          "price-label-0",
-          "price-value-0"
-        ],
-        "styles": {
-          "padding": "12px 0",
-          "borderTop": "1px solid #d7cec3"
-        }
-      }
-    },
-    {
-      "id": "price-label-1",
-      "type": "text",
-      "config": {
-        "id": "price-label-1",
-        "text": "Mensualidad (4 pagos)",
-        "tag": "p",
-        "styles": {
-          "margin": "0",
-          "fontWeight": "700"
-        }
-      }
-    },
-    {
-      "id": "price-value-1",
-      "type": "text",
-      "config": {
-        "id": "price-value-1",
-        "text": "$3,500 MXN",
-        "tag": "p",
-        "styles": {
-          "margin": "0",
-          "fontSize": "clamp(19px, 3vw, 30px)",
-          "fontWeight": "760"
-        }
-      }
-    },
-    {
-      "id": "price-1",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "components": [
-          "price-label-1",
-          "price-value-1"
-        ],
-        "styles": {
-          "padding": "12px 0",
-          "borderTop": "1px solid #d7cec3"
-        }
-      }
-    },
-    {
-      "id": "price-label-2",
-      "type": "text",
-      "config": {
-        "id": "price-label-2",
-        "text": "Total en mensualidades",
-        "tag": "p",
-        "styles": {
-          "margin": "0",
-          "fontWeight": "700"
-        }
-      }
-    },
-    {
-      "id": "price-value-2",
-      "type": "text",
-      "config": {
-        "id": "price-value-2",
-        "text": "$14,000 MXN",
-        "tag": "p",
-        "styles": {
-          "margin": "0",
-          "fontSize": "clamp(19px, 3vw, 30px)",
-          "fontWeight": "760"
-        }
-      }
-    },
-    {
-      "id": "price-2",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "components": [
-          "price-label-2",
-          "price-value-2"
-        ],
-        "styles": {
-          "padding": "12px 0",
-          "borderTop": "1px solid #d7cec3"
-        }
-      }
-    },
-    {
-      "id": "price-label-3",
-      "type": "text",
-      "config": {
-        "id": "price-label-3",
-        "text": "Precio regular",
-        "tag": "p",
-        "styles": {
-          "margin": "0",
-          "fontWeight": "700"
-        }
-      }
-    },
-    {
-      "id": "price-value-3",
-      "type": "text",
-      "config": {
-        "id": "price-value-3",
-        "text": "$28,000 MXN",
-        "tag": "p",
-        "styles": {
-          "margin": "0",
-          "fontSize": "clamp(19px, 3vw, 30px)",
-          "fontWeight": "760"
-        }
-      }
-    },
-    {
-      "id": "price-3",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "components": [
-          "price-label-3",
-          "price-value-3"
-        ],
-        "styles": {
-          "padding": "12px 0",
-          "borderTop": "1px solid #d7cec3"
-        }
-      }
-    },
-    {
-      "id": "price-heading",
-      "type": "text",
-      "config": {
-        "id": "price-heading",
-        "text": "Precios",
-        "tag": "h2",
-        "styles": {
-          "margin": "0",
-          "fontFamily": "\"Instrument Serif\", Georgia, serif",
-          "fontWeight": "400",
-          "lineHeight": "1",
-          "letterSpacing": "-.04em",
-          "textWrap": "balance",
-          "fontSize": "clamp(29px, 4vw, 51px)",
-          "marginBottom": "19px"
-        }
-      }
-    },
-    {
-      "id": "price-list",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "components": [
-          "price-0",
-          "price-1",
-          "price-2",
-          "price-3"
-        ],
-        "styles": {
-          "display": "grid",
-          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 210px), 1fr))",
-          "gap": "0 24px"
-        }
-      }
-    },
-    {
-      "id": "pricing-frame",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "components": [
-          "price-heading",
-          "price-list"
+          "context-art"
         ],
         "styles": {
           "boxSizing": "border-box",
           "width": "min(100%, 1200px)",
           "marginInline": "auto",
           "paddingInline": "clamp(18px, 5vw, 66px)",
-          "paddingBlock": "clamp(40px, 7vw, 86px)"
+          "paddingBlock": "clamp(22px, 5vw, 52px)"
         }
       }
     },
     {
-      "id": "pricing",
+      "id": "hero-label",
+      "type": "text",
+      "config": {
+        "id": "hero-label",
+        "text": "Curso",
+        "tag": "p",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "760",
+          "textTransform": "uppercase",
+          "letterSpacing": ".13em",
+          "fontSize": "12px",
+          "color": "#d3c6ff"
+        }
+      }
+    },
+    {
+      "id": "page-heading",
+      "type": "text",
+      "config": {
+        "id": "page-heading",
+        "text": "Diseño sonoro digital",
+        "tag": "h1",
+        "styles": {
+          "margin": "0",
+          "fontFamily": "\"Fahkwang\", \"Arial Narrow\", \"Trebuchet MS\", sans-serif",
+          "fontWeight": "680",
+          "lineHeight": ".99",
+          "letterSpacing": "-.035em",
+          "textWrap": "balance",
+          "fontSize": "clamp(33px, 5.4vw, 74px)",
+          "overflowWrap": "break-word",
+          "marginBlock": "10px 15px",
+          "maxWidth": "20ch"
+        }
+      }
+    },
+    {
+      "id": "hero-description",
+      "type": "text",
+      "config": {
+        "id": "hero-description",
+        "text": "Crea sonidos para tus producciones a partir de sintetizadores y grabaciones. Explora cómo cambian el timbre y la textura al modificar una fuente sonora.",
+        "tag": "p",
+        "styles": {
+          "margin": "0",
+          "maxWidth": "52ch",
+          "fontSize": "clamp(16px, 2vw, 21px)",
+          "lineHeight": "1.58"
+        }
+      }
+    },
+    {
+      "id": "offer-duration",
+      "type": "text",
+      "config": {
+        "id": "offer-duration",
+        "text": "Duración · 4 meses",
+        "tag": "p",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "marginBlockStart": "13px"
+        }
+      }
+    },
+    {
+      "id": "hero-action",
+      "type": "link",
+      "config": {
+        "text": "Consultar por WhatsApp",
+        "href": "https://wa.me/525522699563?text=Hola%2C%20Lynx.%20Quisiera%20informaci%C3%B3n%20sobre%20el%20curso%20Dise%C3%B1o%20sonoro%20digital.",
+        "styles": {
+          "color": "#201a49",
+          "textUnderlineOffset": "4px",
+          "minHeight": "44px",
+          "display": "inline-flex",
+          "alignItems": "center",
+          "fontWeight": "750",
+          "padding": "8px 18px",
+          "background": "#d3c6ff",
+          "textDecoration": "none",
+          "boxSizing": "border-box",
+          "borderRadius": "3px"
+        }
+      }
+    },
+    {
+      "id": "hero-details",
+      "type": "link",
+      "config": {
+        "text": "Ver el temario",
+        "href": "#contenido-de-la-oferta",
+        "styles": {
+          "color": "inherit",
+          "textUnderlineOffset": "4px",
+          "minHeight": "44px",
+          "display": "inline-flex",
+          "alignItems": "center",
+          "fontWeight": "640"
+        }
+      }
+    },
+    {
+      "id": "hero-prices",
+      "type": "link",
+      "config": {
+        "text": "Ver la promoción",
+        "href": "#precios",
+        "styles": {
+          "color": "inherit",
+          "textUnderlineOffset": "4px",
+          "minHeight": "44px",
+          "display": "inline-flex",
+          "alignItems": "center",
+          "fontWeight": "640"
+        }
+      }
+    },
+    {
+      "id": "hero-actions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "hero-action",
+          "hero-details",
+          "hero-prices"
+        ],
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "flexWrap": "wrap",
+          "gap": "5px 17px",
+          "marginBlockStart": "20px"
+        }
+      }
+    },
+    {
+      "id": "hero-heading",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "hero-label",
+          "page-heading"
+        ],
+        "styles": {
+          "minWidth": "0"
+        }
+      }
+    },
+    {
+      "id": "hero-art",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/music.lynxpardelle.com/shared/hero-images/curso-diseno-sonoro-r2-37e5249337f764e6.webp",
+        "alt": "Un sintetizador modular conectado a un osciloscopio.",
+        "loading": "eager",
+        "fetchPriority": "high",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "objectFit": "cover",
+          "height": "clamp(190px, 43vw, 500px)",
+          "objectPosition": "center 44%"
+        }
+      }
+    },
+    {
+      "id": "hero-copy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "hero-heading",
+          "hero-description",
+          "offer-duration",
+          "hero-actions"
+        ],
+        "styles": {
+          "minWidth": "0",
+          "position": "relative",
+          "marginTop": "clamp(-68px, -7vw, -22px)",
+          "width": "min(100%, 705px)",
+          "background": "#16162f",
+          "boxSizing": "border-box",
+          "padding": "clamp(18px, 4vw, 46px)",
+          "borderInlineStart": "4px solid #d3c6ff"
+        }
+      }
+    },
+    {
+      "id": "hero-frame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "hero-art",
+          "hero-copy"
+        ],
+        "styles": {
+          "boxSizing": "border-box",
+          "width": "min(100%, 1200px)",
+          "marginInline": "auto",
+          "paddingInline": "clamp(18px, 5vw, 66px)",
+          "paddingBlock": "clamp(20px, 4vw, 51px)"
+        }
+      }
+    },
+    {
+      "id": "hero",
       "type": "container",
       "config": {
         "tag": "section",
         "components": [
-          "pricing-frame"
+          "hero-frame"
         ],
         "styles": {
-          "background": "#ece2d1",
-          "color": "#141217"
-        },
-        "id": "precios"
+          "color": "#f7f3ea",
+          "background": "#16162f",
+          "overflow": "hidden"
+        }
       }
     },
     {
@@ -1036,7 +1422,7 @@
       "type": "link",
       "config": {
         "text": "Servicios",
-        "href": "https://music.lynxpardelle.com/formacion/servicios",
+        "href": "https://music.lynxpardelle.com/servicios",
         "styles": {
           "color": "inherit",
           "textUnderlineOffset": "4px",
@@ -1074,7 +1460,7 @@
         "text": "LYNX PARDELLE",
         "href": "https://music.lynxpardelle.com/formacion",
         "styles": {
-          "color": "#f6c17d",
+          "color": "#d3c6ff",
           "textUnderlineOffset": "4px",
           "minHeight": "44px",
           "display": "inline-flex",
@@ -1152,7 +1538,7 @@
         "text": "Proyecto musical ↗",
         "href": "https://music.lynxpardelle.com/",
         "styles": {
-          "color": "#f6c17d",
+          "color": "#d3c6ff",
           "textUnderlineOffset": "4px",
           "minHeight": "44px",
           "display": "inline-flex",
@@ -1209,8 +1595,9 @@
         "tag": "main",
         "components": [
           "hero",
-          "topic-section",
           "pricing",
+          "topic-section",
+          "offer-context",
           "bio",
           "return-section"
         ],
@@ -1229,7 +1616,7 @@
           "site-footer"
         ],
         "styles": {
-          "background": "#141217",
+          "background": "#16162f",
           "color": "#f7f3ea",
           "fontFamily": "\"Instrument Sans\", system-ui, sans-serif",
           "lineHeight": "1.6",
